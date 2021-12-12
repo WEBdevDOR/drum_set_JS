@@ -1,16 +1,4 @@
-// var btnList = document.querySelectorAll(".drum");
-// for (var i = 0; i < document.querySelectorAll("button").length; i++) {
-//     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-//         var key = this.innerHTML;
-//         makeSound(key);
-//         buttonAnimation(key);
-//     });
-// }
-
-// document.addEventListener("keydown", function(event) {
-//     makeSound(event.key);
-//     buttonAnimation(event.key);
-// });
+//selectors//
 $("button").click(function() {
     var key = $(this).text();
     makeSound(key);
@@ -22,6 +10,7 @@ $(document).keydown(function(event) {
     buttonAnimation(event.key);
 });
 
+//functions//
 function makeSound(key) {
     switch (key) {
         case "w":
